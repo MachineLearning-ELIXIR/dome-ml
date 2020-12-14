@@ -19,4 +19,5 @@ As we gather feedback, and as the field evolves, we plan to publish comprehensiv
 
 ### The DOME Recommendations
 
+CodeOcean capsule is available [here](https://codeocean.com/capsule/2641729/tree).
 _to be added here_
