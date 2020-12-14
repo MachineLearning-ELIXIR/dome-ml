@@ -1,0 +1,19 @@
+metadata_version: 1
+name: DOME version 1.0
+description: Modern biology frequently relies on machine learning to provide predictions and improve decision processes. There have been recent calls for more scrutiny on machine learning performance and possible limitations. Here we present a specification file to aid in the development of a supervised machine learning methods section for biology. The specification is available as in YAML format and python code is used to construct the structured methods description. The structured specification is based on data, optimization, model, evaluation or DOME for short. The specification will continuously be updated in versions in the future.
+tags:
+- Machine Learning
+- Artificial Intelligence
+- biology
+- specification
+- supervised-learning
+- validation
+authors:
+- name: Ian Walsh
+- name: Dmytro Fishman
+- name: Dario Garcia-Gasulla
+- name: Tiina Titma
+- name: Gianluca Pollastri
+- name: The ELIXIR Machine Learning focus group
+corresponding_contributor:
+  name: Jennifer Harrow, Fotis E. Psomopoulos, Silvio C.E. Tosatto
