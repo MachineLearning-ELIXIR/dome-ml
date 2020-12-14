@@ -1,0 +1,147 @@
+---
+DOME_version: 1.0
+
+#######################
+#        DATA         #
+#######################
+Data:
+ - Provenance
+ - Data splits
+ - Redundancy between data splits
+ - Availability of data
+
+Provenance:
+ - Source of data?
+ - Number of data points?
+ - Data used in previous papers and/or by community?
+ 
+Data splits:
+ - how many data splits?
+ - how many data points in each split?
+ - if number data splits > 2. What were sets 3, ... N for (e.g. cross validation, validation set or indepenent test)?
+ - what is the distribution of data points in each data split (e.g. number of + and - cases in classification or frequency distribution in regression)?
+
+Redundancy between data splits:
+ - How were the sets split? 
+ - Are the training and test sets independent? 
+ - How was this enforced (e.g. redundancy reduction to less than X% pairwise identity)? 
+ - How does the distribution compare to previously published ML datasets in the biological field?
+
+Availability of data: 
+- Is the data, including the data splits used, released in a public forum?
+
+
+#######################
+#    Optimization     #
+#######################
+Optimization:
+ - Algorithm
+ - Data encoding
+ - Parameters
+ - Features
+ - Fitting
+ - Regularization
+ - Availability of configuration
+
+Algorithm:
+ - What is the ML algorithm class used? 
+ - Is the ML algorithm new? 
+ - If it is a new ML algorithm, why was it not published in a ML journal, and why was it chosen over better known alternatives?
+
+#### Going DEEPER: DEPTH 3 example i.e. meta-predictor IS A algorithm#######
+What is the ML algorithm class used?:
+ - Meta-predictor
+
+Meta-predictor:
+ - Does the model use data from other ML algorithms as input (i.e. it is a meta-predictor)? 
+ - If it is a meta-predictor, which ML methods constitute the whole? 
+ - If it is a meta-predictor, is it completely clear that training data of initial predictors and meta-predictor is independent of test data for the meta-predictor?
+###################################
+
+Data encoding:
+ - How was the data encoded and pre-processed for the ML algorithm?
+
+Parameters:
+ - How many parameters (p) are used in the model? 
+ - How was p ​selected?
+
+Features:
+ - How many features (f) are used as input? 
+ - Was feature selection performed? 
+ - If feature selection performed, was it done using the training set only?
+
+Fitting:
+ - Is the number of parameters (p) much larger than the number of training points and/or is the number of features (f) large (e.g. in classification is p>>(Npos+Nneg) and/or f>100)?
+ - If yes to previous question, how was over-fitting ruled out?
+ - Conversely, if the number of training points seem very much larger than p and/or f is small how was under-fitting ruled out? 
+
+Regularization:
+ - were any over-fitting prevention techniques performed (e.g. early stopping using a validation set)? 
+ - If yes, which ones?
+
+Availability of configuration:
+ - Are the hyper-parameter configurations, optimization schedule, model files and optimization parameters reported available? 
+ - If yes, where (e.g. URL) and how (license)? 
+
+
+#######################
+#    MODEL            #
+#######################
+Model:
+ - Interpretability
+ - Output
+ - Execution time
+ - Availability of software
+
+Interpretability: 
+ - Is the model blackbox or transparent? 
+ - If the model is transparent, can you give clear examples for this? 
+
+Output: 
+ - Is the model classification or regression?
+
+Execution time: 
+ - How much real-time does a single representative prediction require on a standard machine? (e.g. seconds on a desktop PC or high-performance computing cluster) 
+
+Availability of software: 
+ - Is the source code released? 
+ - Is a method to run the algorithm such as executable, web server, virtual machine or container instance released? 
+ - If yes to public release, where (e.g. URL) and how (license)? 
+
+#######################
+#    EVALUATION       #
+#######################
+Evaluation:
+ - Evaluation method
+ - Performance measures
+ - Comparison
+ - Confidence
+ - Availability of evaluation
+
+Evaluation method: 
+ - How was the method evaluated? (E.g. cross-validation, independent dataset, novel experiments)
+
+Performance measures:  
+ - Which performance metrics are reported? 
+ - Is this set of metrics representative (e.g. compared to the literature)? 
+
+Comparison: 
+ - Was a comparison to publicly available methods performed on benchmark datasets? 
+ - Was a comparison to simpler baselines performed? 
+
+Confidence: 
+ - Do the performance metrics have confidence intervals? 
+ - Are the results statistically significant to claim that the method is superior to others and baselines? 
+ 
+Availability of evaluation: 
+ - Are the raw evaluation files (e.g. assignments for comparison and baselines, statistical code, confusion matrices) available? 
+ - If public released, where (e.g. URL) and how (license)?
+
+#########################################
+#    Notes to be included in each node  #
+#########################################
+Notes: {"Data": "repeat for each dataset", 
+        "Optimization": "repeat for trained model", 
+        "Model": "repeat for trained model"
+        }
+

@@ -1,0 +1,89 @@
+---
+DOME_version: 1.0
+
+#######################
+#        DATA         #
+#######################
+Data:
+ - Provenance
+ - Data splits
+ - Redundancy between data splits
+ - Availability of data
+
+Provenance:
+ - number of data splits > 1
+ 
+Data splits:
+ - how many data splits?
+ - how many data points in each split?
+ - if number data splits > 2. What were sets 3, ... N for (e.g. cross validation, validation set or indepenent test)?
+ - what is the distribution of data points in each data split (e.g. number of + and - cases in classification or frequency distribution in regression)?
+
+Redundancy between data splits:
+ - train set and test sets are independent
+ - data size and distribution representative and shown to be so (e.g. compared to previous publications, compared to what is available in the ciological domain)
+ - If meta-predictor, is it completely clear that training data of initial predictors and meta-predictor is independent of test data for the meta-predictor?
+
+
+Availability of data: 
+- data is released to community
+
+
+#######################
+#    Optimization     #
+#######################
+Optimization:
+ - Features
+ - Fitting
+ - Regularization
+ - Availability of configuration
+
+Features:
+ - Clearly state that no features were selected on data used for parameter tuning (i.e. training sets)**
+
+Fitting:
+ - Appropriate metrics to prove no over/under fitting (e.g. compare train and test error)**
+
+Regularization:
+ - were any over-fitting prevention techniques performed (e.g. early stopping using a validation set)? 
+ - If yes, which ones?
+
+Availability of configuration:
+ - Release hyper-parameter configurations, optimization schedule, model files and optimization parameters files
+ 
+
+#######################
+#    MODEL            #
+#######################
+Model:
+ - Interpretability
+
+Interpretability: 
+ - Describe the choice of black box / interpretable model. If interpretable show examples of it doing so.
+
+
+
+#######################
+#    EVALUATION       #
+#######################
+Evaluation:
+ - Performance measures
+ - Comparison
+ - Confidence
+
+
+Performance measures:  
+ - Adopt community validated measures and benchmark datasets for evaluation. 
+
+Comparison: 
+ - Compare with public methods & simple models (baselines)
+
+Confidence: 
+ - Confidence intervals/error intervals and statistical tests to gauge prediction robustness. 
+
+
+
+#########################################
+#    Notes to be included in each node  #
+#########################################
+Notes: {}
