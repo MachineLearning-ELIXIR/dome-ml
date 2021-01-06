@@ -21,6 +21,8 @@ As we gather feedback, and as the field evolves, we plan to publish comprehensiv
 
 ### The DOME Recommendations
 
+The DOME machine learning summary table and examples for it can be found in the /data directory.
+
 CodeOcean capsule is available [here](https://codeocean.com/capsule/2641729/tree).
 
 _More info to be added here_
